@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tishachawla-jg.github.io/sitemap.xml

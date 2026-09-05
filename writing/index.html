@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Writing &middot; Tisha Chawla</title>
+<meta name="description" content="Essays by Tisha Chawla on agent engineering: memory, token governance, reproducibility and spec-driven development, plus personal writing at Off Script." />
+<link rel="canonical" href="https://tishachawla-jg.github.io/writing/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Writing &middot; Tisha Chawla" />
+<meta property="og:description" content="Essays on agent engineering: memory, token governance, reproducibility and spec-driven development. Plus personal writing at Off Script." />
+<meta property="og:url" content="https://tishachawla-jg.github.io/writing/" />
+<meta property="og:image" content="https://tishachawla-jg.github.io/profile.png" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="../profile.png" />
+<link rel="stylesheet" href="../assets/style.css" />
+<script>
+  (function () {
+    var s = null;
+    try { s = localStorage.getItem('theme'); } catch (e) {}
+    var d = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', s || (d ? 'dark' : 'light'));
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="home" href="../">Tisha Chawla</a>
+    <div class="nav-links">
+      <a href="../#building">Building</a>
+      <a href="../talks/">Talks</a>
+      <a href="../research/">Research</a>
+      <a href="./" aria-current="page">Writing</a>
+      <a href="../#contact">Contact</a>
+    </div>
+    <button class="tog" type="button" aria-label="Toggle theme">&#9789;</button>
+  </div>
+</nav>
+
+<main id="main">
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Writing</h1>
+    <p>Technical essays on why agents break and what it takes to fix them, published on DEV. Separately, I write <a href="https://tishachawla.substack.com/">Off Script</a>, about ambition, work, and the strange years between becoming someone and figuring out who you actually want to be.</p>
+    <div class="social">
+      <a href="https://dev.to/tisha">DEV Community</a>
+      <a href="https://tishachawla.substack.com/">Off Script</a>
+      <a href="https://scholar.google.com/citations?user=1RlfxgwAAAAJ&amp;hl=en">Google Scholar</a>
+    </div>
+  </header>
+
+  <section class="sec">
+    <h2>Technical</h2>
+    <p class="lede">Agent memory, cost governance, reproducibility, and where structure helps.</p>
+    <ul class="list">
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/did-your-ai-agent-quietly-blow-all-your-money-5e9c">Did Your AI Agent Quietly Blow All Your Money?</a>
+        <div class="it-meta"><span>05 Sep 2026</span><span>3 min read</span></div>
+        <p class="it-desc">Why a budget enforced across a whole run catches the overspend that per-call limits miss, and what TokenOps does about it.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/debugging-multi-agent-systems-your-trace-tree-is-lying-1oi9">Debugging Multi-Agent Systems: Your Trace Tree Is Lying</a>
+        <div class="it-meta"><span>12 Aug 2026</span><span>8 min read</span></div>
+        <p class="it-desc">Naive attribution builds a confidently wrong parent-child tree: nothing crashes, the trace just points at the wrong code for an hour. Opening a span before the wrapped function runs, rather than after, fixes it.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/40-of-ai-agent-projects-will-be-canceled-by-2027-token-governance-is-how-you-avoid-it-38id">40% of AI Agent Projects Will Be Canceled by 2027. Token Governance Is How You Avoid It.</a>
+        <div class="it-meta"><span>09 Aug 2026</span><span>12 min read</span></div>
+        <p class="it-desc">Gartner predicts over 40% of agentic AI projects will be cancelled by 2027, with cost among the reasons. Four steps out: instrument, attribute, surface, enforce.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/you-recorded-the-incident-now-prove-your-fix-actually-works-2cni">You Recorded the Incident. Now Prove Your Fix Actually Works.</a>
+        <div class="it-meta"><span>22 Jul 2026</span><span>6 min read</span></div>
+        <p class="it-desc">Cut-point replay: freeze the run rather than the model, drop your new code into the middle of a recorded incident, and play everything upstream back byte for byte.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/why-agents-forget-5b46">Why Agents Forget</a>
+        <div class="it-meta"><span>07 Jun 2026</span><span>9 min read</span></div>
+        <p class="it-desc">Models are stateless functions with frozen weights, so agents get faster at repeating work rather than better at it. Persistence is largely solved; learning into the weights is not.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/your-agent-failed-in-prod-good-luck-reproducing-it-56ci">Your Agent Failed in Prod. Good Luck Reproducing It.</a>
+        <div class="it-meta"><span>03 Jun 2026</span><span>23 min read</span></div>
+        <p class="it-desc">Temperature zero buys sampling determinism, not system determinism. Batch composition, GPU concurrency and model drift all move the output, so record the run and replay it instead of chasing bitwise reproducibility.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/spec-driven-development-when-structure-helps-and-when-it-becomes-tax-1f66">Spec-Driven Development: When Structure Helps and When It Becomes Tax</a>
+        <div class="it-meta"><span>01 Jun 2026</span><span>11 min read</span></div>
+        <p class="it-desc">A U-shaped cost curve. Spec it when ambiguity is expensive; past the optimum every extra rule just consumes the agent's finite reasoning budget.</p>
+      </li>
+    </ul>
+    <a class="more" href="https://dev.to/tisha">All posts on DEV &rarr;</a>
+  </section>
+
+  <section class="sec">
+    <h2>Off Script</h2>
+    <p class="lede">Personal writing on ambition, work, relationships, and the strange years between becoming someone and figuring out who you actually want to be.</p>
+    <ul class="list">
+      <li>
+        <a class="it-title" href="https://tishachawla.substack.com/p/the-privilege-paradox">The Privilege Paradox</a>
+        <div class="it-meta"><span>27 Aug 2026</span><span>Thoughts on social conditioning</span></div>
+      </li>
+      <li>
+        <a class="it-title" href="https://tishachawla.substack.com/p/evolve-evolve-evolve">Evolve. Evolve. Evolve.</a>
+        <div class="it-meta"><span>26 Aug 2026</span><span>Quiet pivots</span></div>
+      </li>
+      <li>
+        <a class="it-title" href="https://tishachawla.substack.com/p/the-price-of-an-open-heart">The Price of an Open Heart</a>
+        <div class="it-meta"><span>24 Aug 2026</span><span>What it is to be a human</span></div>
+      </li>
+      <li>
+        <a class="it-title" href="https://tishachawla.substack.com/p/did-you-get-this-life-just-to-coast">Did You Get This Life Just to Coast?</a>
+        <div class="it-meta"><span>23 Aug 2026</span><span>On audacity</span></div>
+      </li>
+      <li>
+        <a class="it-title" href="https://tishachawla.substack.com/p/speaking-at-ai-engineer-worlds-fair">Speaking at AI Engineer World's Fair, San Francisco</a>
+        <div class="it-meta"><span>22 Aug 2026</span><span>6000 engineers, 3 accepted proposals, 0 hype</span></div>
+      </li>
+      <li>
+        <a class="it-title" href="https://tishachawla.substack.com/p/the-billionaire-myth-and-your-100">The Billionaire Myth and Your 100% Survival Rate</a>
+        <div class="it-meta"><span>21 Aug 2026</span><span>On unlearning societal metrics</span></div>
+      </li>
+    </ul>
+    <a class="more" href="https://tishachawla.substack.com/">Subscribe to Off Script &rarr;</a>
+  </section>
+
+  <section class="sec">
+    <h2>Elsewhere</h2>
+    <ul class="list">
+      <li>
+        <a class="it-title" href="https://commandline.microsoft.com/tokenops-real-time-run-scoped-cost-control-ai-agents/">TokenOps: real-time, run-scoped cost control for AI agents</a>
+        <div class="it-meta"><span>Microsoft Command Line</span></div>
+        <p class="it-desc">TokenOps featured in Microsoft's developer newsletter.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://scholar.google.com/citations?user=1RlfxgwAAAAJ&amp;hl=en">Peer-reviewed research</a>
+        <div class="it-meta"><span>11 publications</span><span>173 citations</span></div>
+        <p class="it-desc">Applied machine learning and network measurement. Full list on the <a href="../research/">research page</a>.</p>
+      </li>
+    </ul>
+  </section>
+
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cols">
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../talks/">Talks</a></li>
+          <li><a href="../research/">Research</a></li>
+          <li><a href="./">Writing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="https://github.com/theagentplane/tokenops">TokenOps</a></li>
+          <li><a href="https://github.com/theagentplane/chronicle">Chronicle</a></li>
+          <li><a href="https://github.com/theagentplane">The Agent Plane</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Writing</h4>
+        <ul>
+          <li><a href="https://dev.to/tisha">DEV Community</a></li>
+          <li><a href="https://tishachawla.substack.com/">Off Script</a></li>
+          <li><a href="https://scholar.google.com/citations?user=1RlfxgwAAAAJ&amp;hl=en">Google Scholar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://github.com/tishachawla-jg">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/tisha-chawla/">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@tisha_talks_tech">YouTube</a></li>
+          <li><a href="https://calendly.com/tishachawla5/tisha-chawla">Book a time</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-base">&copy; <span id="year">2026</span> Tisha Chawla. Built and maintained by me.</p>
+  </div>
+</footer>
+
+<script src="../assets/main.js"></script>
+</body>
+</html>

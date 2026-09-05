@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tisha Chawla</title>
+<meta name="description" content="Tisha Chawla builds data platform infrastructure at Microsoft, in Commerce and Ecosystems, and works in open source on agent infrastructure as co-creator of The Agent Plane. Incoming research fellow at MPI-SWS." />
+<link rel="canonical" href="https://tishachawla-jg.github.io/" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Tisha Chawla" />
+<meta property="og:description" content="Software engineer at Microsoft, incoming research fellow at MPI-SWS. I work in open source on agent infrastructure, as co-creator of The Agent Plane." />
+<meta property="og:url" content="https://tishachawla-jg.github.io/" />
+<meta property="og:image" content="https://tishachawla-jg.github.io/profile.png" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="profile.png" />
+<link rel="stylesheet" href="assets/style.css" />
+<script>
+  (function () {
+    var s = null;
+    try { s = localStorage.getItem('theme'); } catch (e) {}
+    var d = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', s || (d ? 'dark' : 'light'));
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="home" href="./">Tisha Chawla</a>
+    <div class="nav-links">
+      <a href="#building">Building</a>
+      <a href="talks/">Talks</a>
+      <a href="research/">Research</a>
+      <a href="writing/">Writing</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="tog" type="button" aria-label="Toggle theme">&#9789;</button>
+  </div>
+</nav>
+
+<main id="main">
+<div class="wrap">
+
+  <header class="hero">
+    <div class="hero-top">
+      <div>
+        <h1>Hi, I'm Tisha.</h1>
+        <p>I build data platform infrastructure at Microsoft, in Commerce and Ecosystems: large-scale analytics, and the agent systems that run on top of it. I work in open source on agent infrastructure, as co-creator of <a href="https://github.com/theagentplane">The Agent Plane</a>. In October I join <strong>MPI-SWS</strong> as a research fellow.</p>
+      </div>
+      <img class="avatar" src="profile.png" alt="Tisha Chawla" width="116" height="116" />
+    </div>
+
+    <div class="social">
+      <a href="https://github.com/theagentplane">GitHub</a>
+      <a href="https://www.linkedin.com/in/tisha-chawla/">LinkedIn</a>
+      <a href="https://dev.to/tisha">DEV</a>
+      <a href="https://www.youtube.com/@tisha_talks_tech">YouTube</a>
+      <a href="https://tishachawla.substack.com/">Substack</a>
+      <a href="https://scholar.google.com/citations?user=1RlfxgwAAAAJ&amp;hl=en">Scholar</a>
+      <a href="mailto:tishachawla5@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <section class="sec" id="building">
+    <h2>Building</h2>
+    <p class="lede">Open-source infrastructure for running agents reliably, co-created and built in the open under <a href="https://github.com/theagentplane">The Agent Plane</a>.</p>
+    <ul class="list">
+      <li>
+        <a class="it-title" href="https://github.com/theagentplane/tokenops">TokenOps</a>
+        <div class="it-meta"><span data-repo="theagentplane/tokenops">50 &#9733;</span><span>Python</span><span>pip install agent-tokenops</span></div>
+        <p class="it-desc">Run-aware token governance for multi-agent systems. Enforces one budget across a whole workflow rather than per call, so a runaway agent stops before the invoice arrives.</p>
+        <div class="it-links">
+          <a href="https://commandline.microsoft.com/tokenops-real-time-run-scoped-cost-control-ai-agents/">Featured in Microsoft's Command Line</a>
+          <a href="https://pypi.org/project/agent-tokenops/">PyPI</a>
+        </div>
+      </li>
+      <li>
+        <a class="it-title" href="https://github.com/theagentplane/chronicle">Chronicle</a>
+        <div class="it-meta"><span data-repo="theagentplane/chronicle">20 &#9733;</span><span>Python</span></div>
+        <p class="it-desc">Record-and-replay for agent decision graphs. Turns a production agent failure into a committed regression test, then re-runs your fix without live model calls.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="sec" id="talks">
+    <h2>Talks</h2>
+    <p class="lede">I speak about agent reliability, cost, and reproducibility at engineering conferences and inside Microsoft.</p>
+    <ul class="list">
+      <li>
+        <a class="it-title" href="https://aicodingsummit.com/nyc/">Debugging the Agent That Refuses to Fail the Same Way Twice</a>
+        <div class="it-meta"><span class="tag">Upcoming</span><span>AI Coding Summit NYC</span><span>16&ndash;19 Nov 2026</span><span>Jersey City</span></div>
+        <p class="it-desc">Capturing every non-deterministic input to an agent loop in an append-only execution log, replaying a failed run step by step, and turning that replay into a reproducible eval.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://www.youtube.com/watch?v=GJX19pNhmSw">FinOps for AI Agents: Who Spent All the Tokens?</a>
+        <div class="it-meta"><span>AI Engineer World's Fair 2026</span><span>Jul 2026</span><span>San Francisco</span></div>
+        <p class="it-desc">Where agent spend actually goes, how to make it visible, and how to design agents that stay economical as they scale.</p>
+      </li>
+      <li>
+        <a class="it-title" href="https://www.youtube.com/watch?v=Lc8zRh9muoY">Your Agent Failed in Prod. Good Luck Reproducing It.</a>
+        <div class="it-meta"><span>AI Engineer World's Fair 2026</span><span>Online track</span></div>
+        <p class="it-desc">Why non-determinism makes agent failures so hard to chase, and what it takes to make a production incident reproducible on a laptop.</p>
+      </li>
+    </ul>
+    <a class="more" href="talks/">All talks, including the Microsoft AIDE series &rarr;</a>
+  </section>
+
+  <section class="sec" id="research">
+    <h2>Research</h2>
+    <p class="lede">Peer-reviewed applied machine learning and network measurement, co-authored with collaborators at NUS, UNSW, RIT, VIT and Deakin.</p>
+    <div class="stats">
+      <div class="stat"><span class="n">173</span><span class="l">citations</span></div>
+      <div class="stat"><span class="n">11</span><span class="l">publications</span></div>
+    </div>
+    <ul class="list">
+      <li>
+        <span class="it-title">ESPRESSO: Advanced End-to-End Flow Correlation Attacks on Tor</span>
+        <div class="it-meta"><span>APNET 2024 (SIGCOMM)</span><span>11 citations</span></div>
+      </li>
+      <li>
+        <span class="it-title">SYN-GAN: A robust intrusion detection system using GAN-based synthetic data for IoT security</span>
+        <div class="it-meta"><span>Internet of Things, 2024</span><span>128 citations</span></div>
+      </li>
+      <li>
+        <span class="it-title">You Must Be a Trump Supporter: Political identity projections on the social web</span>
+        <div class="it-meta"><span>ASONAM 2024</span><span>3 citations</span></div>
+      </li>
+    </ul>
+    <a class="more" href="research/">All publications &rarr;</a>
+  </section>
+
+  <section class="sec" id="writing">
+    <h2>Writing</h2>
+    <p class="lede">Long-form on the hard parts of agent engineering: memory, cost, reproducibility, and structure.</p>
+    <ul class="list">
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/did-your-ai-agent-quietly-blow-all-your-money-5e9c">Did Your AI Agent Quietly Blow All Your Money?</a>
+        <div class="it-meta"><span>05 Sep 2026</span><span>3 min read</span></div>
+      </li>
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/debugging-multi-agent-systems-your-trace-tree-is-lying-1oi9">Debugging Multi-Agent Systems: Your Trace Tree Is Lying</a>
+        <div class="it-meta"><span>12 Aug 2026</span><span>8 min read</span></div>
+      </li>
+      <li>
+        <a class="it-title" href="https://dev.to/tisha/40-of-ai-agent-projects-will-be-canceled-by-2027-token-governance-is-how-you-avoid-it-38id">40% of AI Agent Projects Will Be Canceled by 2027. Token Governance Is How You Avoid It.</a>
+        <div class="it-meta"><span>09 Aug 2026</span><span>12 min read</span></div>
+      </li>
+    </ul>
+    <a class="more" href="writing/">All writing, technical and personal &rarr;</a>
+  </section>
+
+  <section class="sec" id="awards">
+    <h2>Awards</h2>
+    <ul class="list">
+      <li>
+        <span class="it-title">EC Excellence Award</span>
+        <div class="it-meta"><span>Microsoft</span></div>
+      </li>
+      <li>
+        <span class="it-title">EC Learn It All Award</span>
+        <div class="it-meta"><span>Microsoft</span></div>
+      </li>
+      <li>
+        <span class="it-title">Raman Research Award</span>
+        <div class="it-meta"><span>VIT Vellore</span></div>
+      </li>
+      <li>
+        <span class="it-title">Women Engineers Scholar</span>
+        <div class="it-meta"><span>Google-backed</span></div>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+<div class="wrap">
+  <section class="quote">
+    <blockquote>In the world's broad field of battle,
+  In the bivouac of Life,
+Be not like dumb, driven cattle!
+  Be a hero in the strife!</blockquote>
+    <cite>Henry Wadsworth Longfellow, &ldquo;A Psalm of Life&rdquo; (1838)</cite>
+  </section>
+</div>
+
+<div class="wrap">
+  <section class="sec" id="contact">
+    <h2>Contact</h2>
+    <p class="lede">Speaking invitations, collaborations, or just to say hi. Email is the surest way to reach me, or book a time directly.</p>
+    <div class="social">
+      <a href="mailto:tishachawla5@gmail.com">tishachawla5@gmail.com</a>
+      <a href="https://calendly.com/tishachawla5/tisha-chawla">Book a time</a>
+      <a href="https://www.linkedin.com/in/tisha-chawla/">LinkedIn</a>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cols">
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="talks/">Talks</a></li>
+          <li><a href="research/">Research</a></li>
+          <li><a href="writing/">Writing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="https://github.com/theagentplane/tokenops">TokenOps</a></li>
+          <li><a href="https://github.com/theagentplane/chronicle">Chronicle</a></li>
+          <li><a href="https://github.com/theagentplane">The Agent Plane</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Writing</h4>
+        <ul>
+          <li><a href="https://dev.to/tisha">DEV Community</a></li>
+          <li><a href="https://tishachawla.substack.com/">Off Script</a></li>
+          <li><a href="https://scholar.google.com/citations?user=1RlfxgwAAAAJ&amp;hl=en">Google Scholar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://github.com/tishachawla-jg">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/tisha-chawla/">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@tisha_talks_tech">YouTube</a></li>
+          <li><a href="https://calendly.com/tishachawla5/tisha-chawla">Book a time</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-base">&copy; <span id="year">2026</span> Tisha Chawla. Built and maintained by me.</p>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
