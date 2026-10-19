@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tishachawla-jg.github.io/sitemap.xml
+Sitemap: https://tishachawla.com/sitemap.xml
